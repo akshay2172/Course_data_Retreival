@@ -1,0 +1,109 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Main container styling */
+.main-contain {
+    margin: 0 auto;
+    max-width: 1050px;
+    padding: 20px;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #03a9f4;
+    padding: 10px 0;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-wrapper .brand-logo {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-wrapper .sidenav-trigger {
+    display: none;
+}
+
+.light-blue{
+    position: relative;
+    left: 37px;
+}
+
+
+
+#table-data{
+    width: 1050px;
+}
+
+@media (max-width: 768px) {
+    .nav-wrapper .sidenav-trigger {
+        display: block;
+        color: #fff;
+    }
+
+    .nav-wrapper .brand-logo {
+        flex-grow: 1;
+        text-align: center;
+    }
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f8f8f8;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Center alignment styling */
+.center-align {
+    text-align: center;
+}
+
+/* Container styling */
+.container {
+    padding: 20px;
+width: 1050px;
+}
+
+iframe{
+    height : 300px;
+    width: 1000px;
+}
