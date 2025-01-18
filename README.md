@@ -75,7 +75,6 @@ This repository contains an authentication system built using **Node.js**, **Exp
 * Access the Application: Open your browser and go to http://your-ip:2000.
 # API Endpoints
 
- ### Authentication
  ## Sign-Up
 * POST /signup
 * Request Body :
