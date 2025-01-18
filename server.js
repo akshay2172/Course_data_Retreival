@@ -141,9 +141,7 @@ app.post('/forgot-password', async (req, res) => {
         user.otp = otp;
         user.resetPasswordExpires = Date.now() + 3600000; 
         await user.save();
-      
-       
-        
+    
 
         const mailOptions = {
             from: 'www.akshaykumar04855@gmail.com',
@@ -161,6 +159,8 @@ app.post('/forgot-password', async (req, res) => {
     } catch (error) {
         res.status(500).json({ error: 'Error processing password reset request' });
     }
+});
+
 
 app.post('/reset-password', async (req, res) => {
     const { email, otp, newPassword } = req.body;
@@ -190,6 +190,6 @@ mongoose.connect(
     server.listen(port, '0.0.0.0', () => {
         console.log(`server is running on port http://172.23.145.77:${port}`);
     });
-}).catch(() => {
+}). catch(() => {
     console.log("unable to connect");
 });
