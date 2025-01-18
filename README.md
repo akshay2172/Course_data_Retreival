@@ -80,7 +80,7 @@ This repository contains an authentication system built using **Node.js**, **Exp
  Authentication
  ## Sign-Up
 - POST /signup
-- Request Body
+- Request Body :
 
 {
   "name": "<user-name>",
@@ -98,7 +98,7 @@ This repository contains an authentication system built using **Node.js**, **Exp
 
 ## Sign-In
 - POST /signin
-- Request Body
+- Request Body:
 {
   "email": "<user-email>",
   "password": "<user-password>"
@@ -107,14 +107,14 @@ This repository contains an authentication system built using **Node.js**, **Exp
 # Password Management
 ## Forgot Password
 - POST /forgot-password
-- Request Body
+- Request Body:
 {
   "email": "<user-email>"
 }
 
 ## Reset Password
 - POST /reset-password
-- Request Body
+- Request Body:
 {
   "email": "<user-email>",
   "otp": "<otp>",- 
