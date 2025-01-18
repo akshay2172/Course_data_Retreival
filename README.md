@@ -56,20 +56,20 @@ This repository contains an authentication system built using **Node.js**, **Exp
 
 ## Installation and Setup
 
-1. ### Clone the Repository ###:
+1. ### Clone the Repository :
  - git clone **repository-url**
  - cd **repository-name**
 
 2. **Install Dependencies**:
 - npm install
 
-3. ### Set Up Environment Variables: Create a .env file in the root directory with the following variables ###:
+3. ### Set Up Environment Variables: Create a .env file in the root directory with the following variables :
      - MONGO_URI="Your MongoDB Connection String"
      - JWT_SECRET="Your Secret Key for JWT"
      - EMAIL_USER="Your Email Address"
      - EMAIL_PASS="Your Email Password"
 
-4. ### Run the Application ###:
+4. ### Run the Application :
 - node server.js
 - Access the Application: Open your browser and go to http://your-ip:2000.
 
