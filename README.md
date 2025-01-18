@@ -1,4 +1,4 @@
-# Authentication System with Email Verification and Password Reset
+# Course Data Retreival 
 
 This repository contains an authentication system built using **Node.js**, **Express**, and **MongoDB**. It supports user sign-up, email verification using OTP, sign-in, forgot password, and password reset functionalities.
 
@@ -56,52 +56,48 @@ This repository contains an authentication system built using **Node.js**, **Exp
 
 ## Installation and Setup
 
-1. **Clone the Repository**:
-   
- - git clone <repository-url>
- - cd <repository-name>
-
+1. ### Clone the Repository ###:
+ - git clone **repository-url**
+ - cd **repository-name**
 
 2. **Install Dependencies**:
-
 - npm install
 
-3. **Set Up Environment Variables: Create a .env file in the root directory with the following variables**:
-     - MONGO_URI="<Your MongoDB Connection String>"
-     - JWT_SECRET="<Your Secret Key for JWT>"
-     - EMAIL_USER="<Your Email Address>"
-     - EMAIL_PASS="<Your Email Password>"
-4. **Run the Application**:
+3. ### Set Up Environment Variables: Create a .env file in the root directory with the following variables ###:
+     - MONGO_URI="Your MongoDB Connection String"
+     - JWT_SECRET="Your Secret Key for JWT"
+     - EMAIL_USER="Your Email Address"
+     - EMAIL_PASS="Your Email Password"
 
+4. ### Run the Application ###:
 - node server.js
-- Access the Application: Open your browser and go to http://<your-ip>:2000.
+- Access the Application: Open your browser and go to http://your-ip:2000.
 
 # API Endpoints
- Authentication
+ Authenticatio
  ## Sign-Up
 - POST /signup
 - Request Body :
 
 {
-  "name": "<user-name>",
-  "email": "<user-email>",
-  "password": "<user-password>"
+  "name": "user-name",
+  "email": "user-email",
+  "password": "user-password"
 }
 
 ## Verify OTP
 - POST /verify-otp
 - Request Body:
 {
-  "userId": "<user-id>",
-  "otp": "<otp>"
+  "userId": "user-id",
+  "otp": "otp"
 }
-
 ## Sign-In
 - POST /signin
 - Request Body:
 {
-  "email": "<user-email>",
-  "password": "<user-password>"
+  "email": "user-email",
+  "password": "user-password"
 }
 
 # Password Management
@@ -109,16 +105,16 @@ This repository contains an authentication system built using **Node.js**, **Exp
 - POST /forgot-password
 - Request Body:
 {
-  "email": "<user-email>"
+  "email": "user-email"
 }
 
 ## Reset Password
 - POST /reset-password
 - Request Body:
 {
-  "email": "<user-email>",
-  "otp": "<otp>",- 
-  "newPassword": "<new-password>"
+  "email": "user-email"
+  "otp": "otp",- 
+  "newPassword": "new-password"
 }
 
 ## Frontend Directory Structure
@@ -139,8 +135,7 @@ This repository contains an authentication system built using **Node.js**, **Exp
 - Dependencies: Check package.json for all dependencies.
 - Testing: Test the application thoroughly before deploying to production.
 
-## License
-- This project is licensed under the MIT License.
+
 
 
 
