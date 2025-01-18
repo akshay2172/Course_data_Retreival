@@ -73,6 +73,9 @@ This repository contains an authentication system built using **Node.js**, **Exp
 4. ### Run the Application :
 * node server.js
 * Access the Application: Open your browser and go to http://your-ip:2000.
+  
+---
+
 # API Endpoints
 
  ## Sign-Up
@@ -85,7 +88,6 @@ This repository contains an authentication system built using **Node.js**, **Exp
 }
 
 ## Verify OTP
-
 * POST /verify-otp
 * Request Body:
 {
@@ -94,7 +96,6 @@ This repository contains an authentication system built using **Node.js**, **Exp
 }
 
 ## Sign-In
-
 * POST /signin
 * Request Body:
 {
@@ -102,10 +103,7 @@ This repository contains an authentication system built using **Node.js**, **Exp
   "password": "user-password"
 }
 
-# Password Management
-
 ## Forgot Password
-
 * POST /forgot-password
 * Request Body:
 {
@@ -113,7 +111,6 @@ This repository contains an authentication system built using **Node.js**, **Exp
 }
 
 ## Reset Password
-
 * POST /reset-password
 * Request Body:
 {
@@ -121,6 +118,8 @@ This repository contains an authentication system built using **Node.js**, **Exp
   "otp": "otp", 
   "newPassword": "new-password"
 }
+
+---
 
 ## Frontend Directory Structure
 
