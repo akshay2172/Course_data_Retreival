@@ -188,7 +188,7 @@ mongoose.connect(
     console.log("connected to database");
 
     server.listen(port, '0.0.0.0', () => {
-        console.log(`server is running on port http://172.23.145.77:${port}`);
+        console.log(`server is running on port http://172.23.149.243:${port}`);
     });
 }). catch(() => {
     console.log("unable to connect");
