@@ -1,25 +1,25 @@
-/* Reset some basic styles */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styling */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
     color: #333;
 }
 
-/* Main container styling */
+
 .main-contain {
     margin: 0 auto;
     max-width: 1050px;
     padding: 20px;
 }
 
-/* Navigation bar styling */
+
 nav {
     background-color: #03a9f4;
     padding: 10px 0;
@@ -64,7 +64,7 @@ nav {
     }
 }
 
-/* Table styling */
+
 table {
     width: 100%;
     margin-top: 20px;
@@ -92,12 +92,12 @@ table tr:hover {
     background-color: #f1f1f1;
 }
 
-/* Center alignment styling */
+
 .center-align {
     text-align: center;
 }
 
-/* Container styling */
+
 .container {
     padding: 20px;
 width: 1050px;

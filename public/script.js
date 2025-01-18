@@ -2,7 +2,7 @@ const form1 = document.getElementById('form1');
 const form2 = document.getElementById('form2');
 const otpForm = document.getElementById('otpVerificationForm');
 
-let userId = ''; // To store userId for OTP verification
+let userId = ''; 
 
 form2.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -20,9 +20,7 @@ form2.addEventListener('submit', async (e) => {
     const data = await response.json();
     if (response.ok) {
         alert("Sign-up successful! Please check your email for OTP.");
-        userId = data.userId; // Store userId for OTP verification
-       // document.getElementById('signupForm').style.display = 'none'; // Hide signup form
-        //document.getElementById('otpForm').style.display = 'block'; // Show OTP form
+        userId = data.userId; 
     } else {
         alert('Error: ' + data.error);
     }
@@ -43,8 +41,6 @@ otpForm.addEventListener('submit', async (e) => {
     if (response.ok) {
         alert("Email verified successfully!");
    
-        //document.getElementById('otpForm').style.display = 'none'; // Hide OTP form
-        //document.getElementById('signinForm').style.display = 'block'; // Show sign-in form
     } else {
         alert('Error: ' + data.error);
     }

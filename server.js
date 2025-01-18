@@ -47,7 +47,7 @@ const transporter = nodemailer.createTransport({
     } ,
 
     tls: {
-        rejectUnauthorized: false, // Bypass self-signed certificate error
+        rejectUnauthorized: false, 
     }
 
 });
@@ -74,7 +74,7 @@ app.post('/signup', async (req, res) => {
 
         transporter.sendMail(mailOptions, async (error, info) => {
             if (error) {
-                console.error('Error sending OTP:', error); // Log detailed error
+                console.error('Error sending OTP:', error); 
                 return res.status(500).json({ error: 'Error sending OTP' });
             }
             await user.save();
@@ -175,12 +175,12 @@ app.post('/reset-password', async (req, res) => {
         await user.save();
         res.status(200).json({ message: 'Password has been reset successfully' });
     } catch (error) {
-        res.status(500).json({ error: 'Error resetting password' });  //error checking
+        res.status(500).json({ error: 'Error resetting password' });  
     }
 });
 
 
-// Add this to serve the forgot-password HTML page
+
 
 mongoose.connect(
     "mongodb+srv://wwwakshaykumar04855:W7SiPexgRtcMIrLZ@cluster0.ncsoz.mongodb.net/Cluster0?retryWrites=true&w=majority&appName=Cluster0"
