@@ -61,7 +61,7 @@ This repository contains an authentication system built using **Node.js**, **Exp
  - git clone **repository-url**
  - cd **repository-name**
 
-2. **Install Dependencies**:
+2. ### Install Dependencies :
 - npm install
 
 3. ### Set Up Environment Variables: Create a .env file in the root directory with the following variables :
