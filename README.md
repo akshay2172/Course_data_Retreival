@@ -76,9 +76,9 @@ This repository contains an authentication system built using **Node.js**, **Exp
 - node server.js
 - Access the Application: Open your browser and go to http://<your-ip>:2000.
 
-## API Endpoints
-**Authentication**
- # Sign-Up
+# API Endpoints
+ Authentication
+ ## Sign-Up
 - POST /signup
 - Request Body
 
@@ -88,7 +88,7 @@ This repository contains an authentication system built using **Node.js**, **Exp
   "password": "<user-password>"
 }
 
-# Verify OTP
+## Verify OTP
 - POST /verify-otp
 - Request Body:
 {
@@ -96,7 +96,7 @@ This repository contains an authentication system built using **Node.js**, **Exp
   "otp": "<otp>"
 }
 
-# Sign-In
+## Sign-In
 - POST /signin
 - Request Body
 {
@@ -104,15 +104,15 @@ This repository contains an authentication system built using **Node.js**, **Exp
   "password": "<user-password>"
 }
 
-## Password Management
-# Forgot Password
+# Password Management
+## Forgot Password
 - POST /forgot-password
 - Request Body
 {
   "email": "<user-email>"
 }
 
-# Reset Password
+## Reset Password
 - POST /reset-password
 - Request Body
 {
